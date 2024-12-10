@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: 1_Git
-# Configurations: Release
+# Configurations: Debug
 # =============================================================================
 
 #############################################
@@ -24,7 +24,7 @@ ninja_required_version = 1.5
 #############################################
 # Set configuration variable for custom commands.
 
-CONFIGURATION = Release
+CONFIGURATION = Debug
 # =============================================================================
 # Include auxiliary files.
 
@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /cygdrive/d/1-Git/Code/cmake-build-release/
+cmake_ninja_workdir = /cygdrive/d/1-Git/Code/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target 1_Git
 
@@ -49,9 +49,9 @@ cmake_ninja_workdir = /cygdrive/d/1-Git/Code/cmake-build-release/
 
 build cmake_object_order_depends_target_1_Git: phony || .
 
-build CMakeFiles/1_Git.dir/main.cpp.o: CXX_COMPILER__1_Git_unscanned_Release /cygdrive/d/1-Git/Code/main.cpp || cmake_object_order_depends_target_1_Git
+build CMakeFiles/1_Git.dir/main.cpp.o: CXX_COMPILER__1_Git_unscanned_Debug /cygdrive/d/1-Git/Code/main.cpp || cmake_object_order_depends_target_1_Git
   DEP_FILE = CMakeFiles/1_Git.dir/main.cpp.o.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/1_Git.dir
   OBJECT_FILE_DIR = CMakeFiles/1_Git.dir
   TARGET_COMPILE_PDB = CMakeFiles/1_Git.dir/
@@ -65,8 +65,8 @@ build CMakeFiles/1_Git.dir/main.cpp.o: CXX_COMPILER__1_Git_unscanned_Release /cy
 #############################################
 # Link the executable 1_Git.exe
 
-build 1_Git.exe: CXX_EXECUTABLE_LINKER__1_Git_Release CMakeFiles/1_Git.dir/main.cpp.o
-  FLAGS = -O3 -DNDEBUG
+build 1_Git.exe: CXX_EXECUTABLE_LINKER__1_Git_Debug CMakeFiles/1_Git.dir/main.cpp.o
+  FLAGS = -g
   LINK_FLAGS = -Wl,--enable-auto-import
   OBJECT_DIR = CMakeFiles/1_Git.dir
   POST_BUILD = :
@@ -81,7 +81,7 @@ build 1_Git.exe: CXX_EXECUTABLE_LINKER__1_Git_Release CMakeFiles/1_Git.dir/main.
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = /bin/sh CMakeFiles/edit_cache.dir/utility.sh ebb0fd422b13a1d4
+  COMMAND = /bin/sh CMakeFiles/edit_cache.dir/utility.sh a6f575680729f4d6
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -92,7 +92,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = /bin/sh CMakeFiles/rebuild_cache.dir/utility.sh c3ab9c73a8df888c
+  COMMAND = /bin/sh CMakeFiles/rebuild_cache.dir/utility.sh a94bfd19e19911b6
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -110,7 +110,7 @@ build 1_Git: phony 1_Git.exe
 # =============================================================================
 
 #############################################
-# Folder: /cygdrive/d/1-Git/Code/cmake-build-release
+# Folder: /cygdrive/d/1-Git/Code/cmake-build-debug
 
 build all: phony 1_Git.exe
 

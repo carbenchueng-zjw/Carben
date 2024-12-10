@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/cygdrive/d/1-Git/cmake-build-release",
-		"source" : "/cygdrive/d/1-Git"
+		"build" : "/cygdrive/d/1-Git/Code/cmake-build-release",
+		"source" : "/cygdrive/d/1-Git/Code"
 	},
 	"version" : 
 	{
