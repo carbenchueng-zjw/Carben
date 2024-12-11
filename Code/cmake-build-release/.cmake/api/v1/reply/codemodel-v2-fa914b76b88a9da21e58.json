@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "1_Git",
+					"name" : "Code",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "1_Git::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-1_Git-Release-7f679ee62544ca5abd68.json",
-					"name" : "1_Git",
+					"id" : "Code::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Code-Release-723b0f6a8cfff250792e.json",
+					"name" : "Code",
 					"projectIndex" : 0
 				}
 			]

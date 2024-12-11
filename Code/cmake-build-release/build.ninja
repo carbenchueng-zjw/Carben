@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: 1_Git
+# Project: Code
 # Configurations: Release
 # =============================================================================
 
@@ -41,40 +41,40 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /cygdrive/d/1-Git/Code/cmake-build-release/
 # =============================================================================
-# Object build statements for EXECUTABLE target 1_Git
+# Object build statements for EXECUTABLE target Code
 
 
 #############################################
-# Order-only phony target for 1_Git
+# Order-only phony target for Code
 
-build cmake_object_order_depends_target_1_Git: phony || .
+build cmake_object_order_depends_target_Code: phony || .
 
-build CMakeFiles/1_Git.dir/main.cpp.o: CXX_COMPILER__1_Git_unscanned_Release /cygdrive/d/1-Git/Code/main.cpp || cmake_object_order_depends_target_1_Git
-  DEP_FILE = CMakeFiles/1_Git.dir/main.cpp.o.d
+build CMakeFiles/Code.dir/main.cpp.o: CXX_COMPILER__Code_unscanned_Release /cygdrive/d/1-Git/Code/main.cpp || cmake_object_order_depends_target_Code
+  DEP_FILE = CMakeFiles/Code.dir/main.cpp.o.d
   FLAGS = -O3 -DNDEBUG -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/1_Git.dir
-  OBJECT_FILE_DIR = CMakeFiles/1_Git.dir
-  TARGET_COMPILE_PDB = CMakeFiles/1_Git.dir/
-  TARGET_PDB = 1_Git.pdb
+  OBJECT_DIR = CMakeFiles/Code.dir
+  OBJECT_FILE_DIR = CMakeFiles/Code.dir
+  TARGET_COMPILE_PDB = CMakeFiles/Code.dir/
+  TARGET_PDB = Code.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 1_Git
+# Link build statements for EXECUTABLE target Code
 
 
 #############################################
-# Link the executable 1_Git.exe
+# Link the executable Code.exe
 
-build 1_Git.exe: CXX_EXECUTABLE_LINKER__1_Git_Release CMakeFiles/1_Git.dir/main.cpp.o
+build Code.exe: CXX_EXECUTABLE_LINKER__Code_Release CMakeFiles/Code.dir/main.cpp.o
   FLAGS = -O3 -DNDEBUG
   LINK_FLAGS = -Wl,--enable-auto-import
-  OBJECT_DIR = CMakeFiles/1_Git.dir
+  OBJECT_DIR = CMakeFiles/Code.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/1_Git.dir/
-  TARGET_FILE = 1_Git.exe
-  TARGET_IMPLIB = lib1_Git.dll.a
-  TARGET_PDB = 1_Git.pdb
+  TARGET_COMPILE_PDB = CMakeFiles/Code.dir/
+  TARGET_FILE = Code.exe
+  TARGET_IMPLIB = libCode.dll.a
+  TARGET_PDB = Code.pdb
 
 
 #############################################
@@ -102,7 +102,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build 1_Git: phony 1_Git.exe
+build Code: phony Code.exe
 
 # =============================================================================
 # Folder targets.
@@ -112,7 +112,7 @@ build 1_Git: phony 1_Git.exe
 #############################################
 # Folder: /cygdrive/d/1-Git/Code/cmake-build-release
 
-build all: phony 1_Git.exe
+build all: phony Code.exe
 
 # =============================================================================
 # Built-in targets

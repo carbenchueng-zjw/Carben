@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "1_Git.exe"
+			"path" : "Code.exe"
 		},
 		{
-			"path" : "1_Git.pdb"
+			"path" : "Code.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -38,7 +38,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++20 -fdiagnostics-color=always"
+					"fragment" : "-O3 -DNDEBUG -std=gnu++20 -fdiagnostics-color=always"
 				}
 			],
 			"language" : "CXX",
@@ -56,13 +56,13 @@
 			]
 		}
 	],
-	"id" : "1_Git::@6890427a1f51a3e7e1df",
+	"id" : "Code::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
+				"fragment" : "-O3 -DNDEBUG",
 				"role" : "flags"
 			},
 			{
@@ -72,8 +72,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "1_Git",
-	"nameOnDisk" : "1_Git.exe",
+	"name" : "Code",
+	"nameOnDisk" : "Code.exe",
 	"paths" : 
 	{
 		"build" : ".",

@@ -1,4 +1,4 @@
-ToolSet: 3.5.4 (local)@E:\cygwin64
+ToolSet: 3.5.4 (local)@C:\cygwin64
 Ninja: null@E:\CLion2.3\bin\ninja\cygwin\x64\ninja.exe
 Options: 
 
