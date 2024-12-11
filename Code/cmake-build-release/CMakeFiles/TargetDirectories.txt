@@ -1,3 +1,0 @@
-/cygdrive/d/1-Git/Code/cmake-build-release/CMakeFiles/Code.dir
-/cygdrive/d/1-Git/Code/cmake-build-release/CMakeFiles/edit_cache.dir
-/cygdrive/d/1-Git/Code/cmake-build-release/CMakeFiles/rebuild_cache.dir
