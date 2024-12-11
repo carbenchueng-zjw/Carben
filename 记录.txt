@@ -11,40 +11,49 @@ https://pytorch.org/
 https://tinywow.com/
 https://www.paddlepaddle.org.cn/
 https://mp.weixin.qq.com/s/3argnPQ-Z5Pd9xJDt3MlhQ
+
 数据集：
 https://www.jiangdabai.com/dcat/%E6%95%B0%E6%8D%AE%E9%9B%86%E4%B8%8B%E8%BD%BD
 https://www.cvmart.net/dataSets
 https://www.heywhale.com/home/dataset
 https://tianchi.aliyun.com/dataset?spm=5176.12282016.0.0.df8455a5Fry5SL
 
-
+查看模型结构：
 https://netron.app/
-深度学习面试题：https://blog.csdn.net/see_you_yu/article/details/106843178
+
+深度学习面试题：
+https://blog.csdn.net/see_you_yu/article/details/106843178
 
 https://hf-mirror.com/models
 
+梯子：
+https://mymonocloud.com/
 
+中药代替：
+http://www.360doc.com/content/21/0213/15/141793_961883907.shtml
 
-中药代替：http://www.360doc.com/content/21/0213/15/141793_961883907.shtml
-中医百科：https://zhongyibaike.com/search
-中医大全：http://www.a-hospital.com/w/%E4%B8%AD%E8%8D%AF
+中医百科：
+https://zhongyibaike.com/search
 
-真术相成 – 人工智能知识学习第一站 (aitopschool.com)
+中医大全：
+http://www.a-hospital.com/w/%E4%B8%AD%E8%8D%AF
+
+真术相成：
 https://ai.aitopschool.com/
 
-东哥
+东哥：
 https://www.itprojects.cn/
-
-查看模型结构
-https://netron.app/
 
 电影：
 https://www.xiepp.cc/
 https://www.btnull.nu/user/login/
 https://www.zxk555.com/
-DV现场：https://www.gdtv.cn/tvChannelDetail/48
 https://tellme.pw/avmoo
 https://www.busdmm.art/
+
+DV现场：
+https://www.gdtv.cn/tvChannelDetail/48
+
 
 华为云：
 https://www.huaweicloud.com/

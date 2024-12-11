@@ -736,6 +736,7 @@ for epoch in range(1,10001):
 # print(dit)
 # print(s.get("horse","100"))
 print(torch.__version__)
+print(cv2.__version__)
 
 
 
