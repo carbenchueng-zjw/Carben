@@ -7,8 +7,10 @@ win:
 3；ctrl shift i  可以立即查看文本光标处的符号的定义，无需在编辑器中打开符号:
 4；ctrl shift alt l：  格式调整
 5；ctrl shift enter    补全
+5；ctrl tab    切换器，切换代码文件
+5；ctrl w    选中（多次按会扩大范围）
 6；alt enter           疑问查询
-7；
+7；shift alt 鼠标左键    多个光标
 
 mac:
 1：shift option  command 鼠标左键：   多光标

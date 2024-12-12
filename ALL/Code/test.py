@@ -1,6 +1,6 @@
 import math
-import random, matplotlib.pyplot as plt, mediapipe as mp
-import torch
+import random, matplotlib.pyplot as plt
+import torch,io,sys
 import torchvision, thop, numpy, os, time, copy, cv2
 from tqdm import tqdm
 from torchvision.utils import save_image
@@ -659,8 +659,8 @@ for epoch in range(1,10001):
 # plt.imshow(img)
 # plt.show()
 
-# # a = torch.Tensor([[1,3,3],[2,3,3],[3,3,3],[7,3,3],[8,3,3],[9,3,3]])
 # a = torch.Tensor([[[[1,3]]],[[[2,3]]]])
+# # a = torch.Tensor([[1,3,3],[2,3,3],[3,3,3],[7,3,3],[8,3,3],[9,3,3]])
 # # a = torch.Tensor([1,2,3,4,5,6])
 # # b = torch.lt(a,5)
 # # c = torch.masked_select(a,b)
@@ -735,12 +735,10 @@ for epoch in range(1,10001):
 # print(lst)
 # print(dit)
 # print(s.get("horse","100"))
-print(torch.__version__)
-print(cv2.__version__)
 
 
-
-
+a = 10
+b=20
 
 
 
