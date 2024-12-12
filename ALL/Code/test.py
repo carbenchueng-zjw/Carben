@@ -316,7 +316,7 @@ from torch.nn import functional as F
 # st_p = [-1,-1]
 # end_p = [-1,-1]
 # img = cv2.imread(r"./_Image/19.jpg")
-# def drawLine(event,x,y,flags,param):
+# def drawLine(event,x,y,flags,parameter):
 #     global st_p,end_p
 #     if event == cv2.EVENT_LBUTTONDOWN:
 #         st_p=(x,y)
@@ -330,9 +330,9 @@ from torch.nn import functional as F
 #
 #         cv2.imshow("board",img)
 #
-# def callBack(event,x,y,flags,param):
-#     drawLine(event,x,y,flags,param)
-#     drawLine(event,x,y,flags,param)
+# def callBack(event,x,y,flags,parameter):
+#     drawLine(event,x,y,flags,parameter)
+#     drawLine(event,x,y,flags,parameter)
 # def mouseDrawing():
 #     cv2.namedWindow("board",cv2.WINDOW_NORMAL)
 #     # cv2.resizeWindow("board",1000,600)
@@ -393,7 +393,7 @@ from torch.nn import functional as F
 # h = N(y)
 # print(h.shape)
 
-# t_train = datasets.cifar(root=r"D:/2-Data",download=True)
+# t_train = datasets.cifar(root=f"D:/2-Data",download=True)
 # t_test = datasets.cifar(root=r"D:/2-Data",download=True,train=False)
 # print(t_train.data[500].shape)
 # un = transforms.ToPILImage()(t_train.data[500])
@@ -418,7 +418,7 @@ from torch.nn import functional as F
 
 
 # net_1 = Linear(3*32*32,512)
-# net_2 = Conv2d(1,1,1,padding=1,padding_mode="zeros")
+net_2 = Conv2d(1,1,1,padding=1,padding_mode="zeros")
 # x_1 = [p.numel() for p in net_1.parameters()]
 # x_2 = [p.numel() for p in net_2.parameters()]
 # print(x_1,x_2)
@@ -736,11 +736,7 @@ for epoch in range(1,10001):
 # print(dit)
 # print(s.get("horse","100"))
 
-
-a = 10
-b=20
-
-
+print("asd")
 
 
 

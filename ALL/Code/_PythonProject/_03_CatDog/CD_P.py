@@ -99,7 +99,7 @@ class CD_Train():
 
             # if avg_train_loss < 0.00045:
             # avg_train_loss = "%.5f" % avg_train_loss
-            # torch.save(self.net.state_dict(), f"./prarm/Rounds{epoch}：{avg_train_loss}.pt")
+            # torch.save(self.net.state_dict(), f"./parameter/Rounds{epoch}：{avg_train_loss}.pt")
             print(f"第{epoch+1}轮的损失是：{avg_train_loss}")
     def Test(self):
         self.net.eval()

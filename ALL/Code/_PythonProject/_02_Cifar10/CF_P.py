@@ -1,4 +1,4 @@
-import numpy, torch
+import torch
 from tqdm import tqdm
 from torch.nn import *
 from torch.utils.tensorboard import SummaryWriter
@@ -49,7 +49,7 @@ class Trainer:
 
     def train(self):
         self.net.train()
-        # self.net.load_state_dict(torch.load("./prarm/Rounds85：0.00002.pt"))
+        # self.net.load_state_dict(torch.load("./parameter/Rounds85：0.00002.pt"))
         for epoch in range(1,1001):
             sum_loss = 0.
             for i, (img, label) in tqdm(enumerate(self.train_loader),total=len(self.train_loader)):
@@ -62,15 +62,16 @@ class Trainer:
                 self.opt.step()
 
                 sum_loss = sum_loss + loss
+                self.summer_writer.add_images("img",img[:40],epoch)
             avg_train_loss = sum_loss / (len(self.train_loader))
-            print(f"第{epoch+1}轮的损失是：{avg_train_loss}")
             self.summer_writer.add_scalar("loss",avg_train_loss,epoch)
-            self.summer_writer.add_images("img",img[:40],epoch)
+            print(f"第{epoch+1}轮的损失是：{avg_train_loss}")
+
             avg_train_loss = "%.5f"%avg_train_loss
-            torch.save(self.net.state_dict(),f"./prarm/Rounds{epoch}：{avg_train_loss}.pt")
+            torch.save(self.net.state_dict(),f"./parameter/Rounds{epoch}：{avg_train_loss}.pt")
 
     def test(self):
-        self.net.load_state_dict(torch.load(f"./prarm/Rounds85：0.00002.pt"))
+        self.net.load_state_dict(torch.load(f"./parameter/Rounds85：0.00002.pt"))
         self.net.eval()
         for epoch in range(1,10000):
             sum_score = 0
@@ -86,7 +87,7 @@ class Trainer:
                 # print(score)
                 # exit()
                 sum_score = sum_score+score
-                avg_test_score = sum_score/len(self.test_loader)
+            avg_test_score = sum_score/len(self.test_loader)
             print(f"第{epoch}得分是：{avg_test_score}")
 
 

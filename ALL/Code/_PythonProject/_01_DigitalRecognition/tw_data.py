@@ -111,7 +111,7 @@ class Trainer:
         self.step = 1
 
     def train(self):
-        self.net.load_state_dict(torch.load(f"./prarm/Rounds37：0.00026.pt"))
+        self.net.load_state_dict(torch.load(f"parameter/Rounds37：0.00026.pt"))
         self.net.train()
         for epoch in range(1,10000):
             sum_loss = 0
@@ -146,11 +146,11 @@ class Trainer:
             print(f"这是第{epoch}轮次的损失：{avg_train_loss}")
             # if avg_train_loss < 0.00033:
             #     avg_train_loss = "%.5f"%avg_train_loss
-            #     torch.save(self.net.state_dict(), f"prarm/Rounds{epoch}：{avg_train_loss}.pt")
+            #     torch.save(self.net.state_dict(), f"parameter/Rounds{epoch}：{avg_train_loss}.pt")
 
     def test(self):
         self.net.eval()
-        self.net.load_state_dict(torch.load("prarm/Rounds33：0.00029.pt"))
+        self.net.load_state_dict(torch.load("parameter/Rounds33：0.00029.pt"))
         for epoch in range(1,10000):
             sum_score = 0
             for i, (img, label) in tqdm(enumerate(self.test_loader,1),total=len(self.test_loader)):

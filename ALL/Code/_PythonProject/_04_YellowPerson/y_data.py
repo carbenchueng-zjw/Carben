@@ -10,7 +10,6 @@ class Y_Data(Dataset):
         self.path = path
         self.dataset = os.listdir(self.path)
 
-
     def __len__(self):
         return len(self.dataset)
 
@@ -32,7 +31,7 @@ class Y_Data(Dataset):
 
 if __name__ == '__main__':
     yd = Y_Data(r"D:\2-Data\yellow_pic\y_train_img")
-    yd[1]
+    print(yd[1])
 
 
 

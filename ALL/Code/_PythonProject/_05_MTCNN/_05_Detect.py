@@ -28,7 +28,7 @@ Device = "cuda" if torch.cuda.is_available() else "cpu"
 
 
 # 侦测器
-class Detector:
+class Detector():
     # 初始化时加载三个网络的权重(训练好的)，cuda默认设为True
     def __init__(self, pnet_param="./parameter/pnet.pt：0.01902.pt",
                  rnet_param="./parameter/rnet.pt：0.00372.pt",
