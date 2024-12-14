@@ -1,4 +1,6 @@
 """
+clion插件：
+缩略图：codeglance
 
 Clion:(windows):
 1；在编辑器中，如果看到某个符号旁边亮起灯泡，则表明存在潜在问题或者 CLion 为该段代码建议了改进。

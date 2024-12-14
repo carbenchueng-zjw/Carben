@@ -736,7 +736,8 @@ for epoch in range(1,10001):
 # print(dit)
 # print(s.get("horse","100"))
 
-print("asd")
+a = 3.1415161718
+print(round(a,3))
 
 
 

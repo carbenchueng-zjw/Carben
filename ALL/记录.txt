@@ -13,6 +13,7 @@ https://www.paddlepaddle.org.cn/
 https://mp.weixin.qq.com/s/3argnPQ-Z5Pd9xJDt3MlhQ
 
 数据集：
+https://aistudio.baidu.com/datasetoverview
 https://www.jiangdabai.com/dcat/%E6%95%B0%E6%8D%AE%E9%9B%86%E4%B8%8B%E8%BD%BD
 https://www.cvmart.net/dataSets
 https://www.heywhale.com/home/dataset

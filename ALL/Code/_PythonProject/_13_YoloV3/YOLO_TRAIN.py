@@ -4,7 +4,6 @@ from YOLO_V3_NET import Dark_net53
 from YOLO_DATA_SET import YoloData
 from torch.nn import *
 
-
 class YoloTrain:
     def __init__(self):
         super().__init__()
