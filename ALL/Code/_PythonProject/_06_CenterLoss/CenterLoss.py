@@ -48,8 +48,8 @@ class Net(Module):
             # Softmax(dim=1)
         )
 
-        self.center_loss = CenterLoss(10,2)
-        self.cross_entropy_loss = CrossEntropyLoss()
+        # self.center_loss = CenterLoss(10,2)
+        # self.cross_entropy_loss = CrossEntropyLoss()
         # self.fc1 = Sequential(
         #     Conv2d(1,26,3),
         #     ReLU(),
@@ -100,19 +100,19 @@ def Visualize(feat, label, epoch):
 
 
 if __name__ == '__main__':
-    Device = torch.device("mps" if mps.is_available() else "cpu")
+    Device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     # x = torch.randn(3,1,28,28)
-    train_data = torchvision.datasets.MNIST(root="/Users/carbenchueng/Desktop/2-Data",
-                                            train=True, download=True,
+    train_data = torchvision.datasets.MNIST(root="D:/2-Data/",
+                                            train=True, download=False,
                                             transform=transforms.ToTensor())
 
-    train_load = DataLoader(train_data, shuffle=True, batch_size=512)
+    train_load = DataLoader(train_data, shuffle=True, batch_size=100)
     net = Net().to(Device)
-    # if os.path.exists("./clw/center_loss.pt"):
-    #     net.load_state_dict(torch.load("clw/center_loss.pt"))
+    # if os.path.exists("./parameter/center_loss.pt"):
+    #     net.load_state_dict(torch.load("parameter/center_loss.pt"))
 
     # loss_func = MSELoss()
-    # loss_func = CrossEntropyLoss()
+    loss_func = CrossEntropyLoss()
 
     opt = torch.optim.Adam(net.parameters())
     # opt = torch.optim.SGD(net.parameters(),lr=0.0001,weight_decay=0.0005)
@@ -123,11 +123,11 @@ if __name__ == '__main__':
         label_loader = []
         for i, (x, y) in enumerate(train_load):
             x = x.reshape(-1,784).to(Device)
-            # target = functional.one_hot(y, 10).float()
+            # target = functional.one_hot(y, 10).to(Device).float()
             target = y.to(Device)
             feat, out = net(x)
-            # loss = loss_func(out,target)
-            loss = net.GetLoss(out,feat,target)
+            loss = loss_func(out,target)
+            # loss = net.GetLoss(out,feat,target)
             # exit()
 
             opt.zero_grad()
@@ -144,5 +144,5 @@ if __name__ == '__main__':
         label = torch.cat(label_loader, 0)
 
         Visualize(feat.detach().cpu().numpy(), label.detach().cpu().numpy(), epoch)
-        torch.save(net.state_dict(),f"./clw/{epoch}.pt")
+        torch.save(net.state_dict(), f"parameter/{epoch}.pt")
         epoch += 1

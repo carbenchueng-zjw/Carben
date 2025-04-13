@@ -418,7 +418,7 @@ from torch.nn import functional as F
 
 
 # net_1 = Linear(3*32*32,512)
-net_2 = Conv2d(1,1,1,padding=1,padding_mode="zeros")
+# net_2 = Conv2d(1,1,1,padding=1,padding_mode="zeros")
 # x_1 = [p.numel() for p in net_1.parameters()]
 # x_2 = [p.numel() for p in net_2.parameters()]
 # print(x_1,x_2)
@@ -739,8 +739,11 @@ for epoch in range(1,10001):
 a = 3.1415161718
 print(round(a,3))
 
-
-
+data = torch.Tensor([[3,5],[5,6],[7,8],[9,8],[6,5]])
+label = torch.Tensor([0,0,1,0,1])
+center = torch.Tensor([[1,1],[8,8]])
+center_exp = center.index_select(dim=0,index=label.long())
+print(center_exp)
 
 
 
