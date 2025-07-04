@@ -13,11 +13,11 @@ https://www.paddlepaddle.org.cn/
 https://mp.weixin.qq.com/s/3argnPQ-Z5Pd9xJDt3MlhQ
 
 数据集：
-https://aistudio.baidu.com/datasetoverview
-https://www.jiangdabai.com/dcat/%E6%95%B0%E6%8D%AE%E9%9B%86%E4%B8%8B%E8%BD%BD
-https://www.cvmart.net/dataSets
-https://www.heywhale.com/home/dataset
-https://tianchi.aliyun.com/dataset?spm=5176.12282016.0.0.df8455a5Fry5SL
+https://aistudio.baidu.com/datasetoverview（飞桨）
+https://www.jiangdabai.com（大白）
+https://www.cvmart.net/dataSets（极市）
+https://www.heywhale.com/home/dataset（和鲸）
+https://tianchi.aliyun.com/dataset?spm=5176.12282016.0.0.df8455a5Fry5SL（阿里天池）
 人脸数据集：
 https://zhuanlan.zhihu.com/p/31378836
 
@@ -89,7 +89,7 @@ https://blog.csdn.net/qq_36756866/article/details/108255715
 
 步兵：
 立花美涼，須藤沙希，佳苗るか，前田かおり，葵千恵，
-櫻木梨乃，愛咲れいら，大場ゆい，佳苗るか，佐倉ねね，
+櫻木梨乃，愛咲れいら，大場ゆい，佐倉ねね，
 佐々木優奈，孟若羽(台湾)，祈里きすみ，小沢アリス，
 遥めぐみ，小川桃果，白瀬ゆきほ
 
@@ -112,7 +112,7 @@ Bbw：
 Himari，宝田もなみ，蓮水りん，推川ゆうり，小向美奈子
 夢乃あいか，磐井玲子，新田雪，若宮はずき，ちなみん，徳島理子
 東雲はる，松永梨杏，青木りん，佐久間楓，山瀬美紀，星乃夏月
-西村ニーナ，玉木くるみ
+西村ニーナ，玉木くるみ，白雪美月,赤井美希
 
 
 Super：
@@ -122,16 +122,16 @@ Super：
 あず希，つぼみ，瀬戸すみれ，本真ゆり，神咲詩織，新村あかり
 姫咲はな，仁科百華，汐世（有栖花あか），岬ななみ
 新川愛七，愛宝すず，天海つばさ,山岸逢花，市川愛茉
-天月あず
+天月あず，神楽ももか,愛川すず
 
 系列：
-NITR，nine，AVSA，KSBJ，gana，TNIK，GMEM，BLK，CHRV，
+NITR，NITRO,nine，AVSA，KSBJ，gana，TNIK，GMEM，BLK，CHRV，
 BuddhaD，GAS，katu，飲精\sun，Jufd/jufe，REAL，PPPE
 アップソン，ジュエル，豊彦，素人，オヤジのハメ撮りドキュメント，
 奴●色, 体液，毒宴会，公衆便所媚薬拘束潮吹きイカセ，精液注，
 淫乱Madam，飼育，セレブの友，女神，（ヴィーナス），禁断介護，
 パンツ内射精，ラグジュTV（素人）,巨乳少女羞恥電車，肉厚食堂/妄想族
-妹の爆乳は一見にしかず
+妹の爆乳は一見にしかず，素人CLOVER
 
 
 （1）Autumn Falls（00后  顶）
